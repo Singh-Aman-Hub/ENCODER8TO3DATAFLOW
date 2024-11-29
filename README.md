@@ -34,22 +34,31 @@ Logical circuit of the above expressions is given below:
 
 Figure 02  Encoder 8 * 3
 
-**Procedure**
-
-/* write all the steps invloved */
 
 **PROGRAM**
+modmle enc(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+input y0,y1,y2,y3,y4,y5,y6,y7;
+output a,b,c;
+assign a= ( y4 | y5 | y6 | y7);
+assign b= ( y2 | y3 | y6 | y7);
+assign c= ( y1 | y3 | y5 | y7);
+endmodule
 
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
+Developed by: RegisterNumber: 24900215 (Aman Singh)
 
-Developed by: RegisterNumber:
-*/
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![logic diagram](https://github.com/user-attachments/assets/8c39c748-75e7-4bdd-a075-68f3c0a513b1)
+
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![waveform](https://github.com/user-attachments/assets/1c3241ca-d712-4b85-83bb-46b4ffc8b73b)
+
 
 **RESULTS**
+Thus  Encoder 8 To 3 in Dataflow Modelling was implemented using verilog and  their functionality was validated using their functional tables
+![waveform](https://github.com/user-attachments/assets/a7eb5d53-9c78-4043-8fde-c5e6be63e775)
+
 
 
 
